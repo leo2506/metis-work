@@ -4,10 +4,10 @@ Second project from Metis Fall 2018 Bootcamp (Project Luther) commited by Leo Li
 # Streamline of Data Analysis
 * [Presentation](https://github.com/leo2506/metis-work/blob/master/Project_2/Slides/Home%20rental%20prediction.pdf)
 * [Summary](https://liuriguang.wixsite.com/leo2506-1/blog/project-luther-how-do-you-find-the-best-value-rental-home)
-* [Multipage_scrapping.ipynb](https://github.com/leo2506/metis-work/blob/master/Project_2/multipage_scrapping.ipynbhttps://github.com/) - walks through the process of web scrapping. 
+* [Multipage_scrapping.ipynb](https://github.com/leo2506/metis-work/blob/master/Project_2/multipage_scrapping.ipynb) - walks through the process of web scrapping. 
 * [Data_cleaning.ipynb](https://github.com/leo2506/metis-work/blob/master/Project_2/Data_cleaning.ipynb) - cleans the scrapped data and engineers new features.
-* [Alternative_model.ipynb](leo2506/metis-work/blob/master/Project_2/Alternative_model.ipynb) - applies Ridge to address overfitting problems.
-* [Final_model.ipynb](https://github.com/leo2506/metis-work/blob/master/Project_2/Final_model.ipynb) - applies variable transformation to address heteroskedasticity and overfitting problems.
+* [Alternative_model.ipynb](https://github.com/leo2506/metis-work/blob/master/Project_2/Alternative_model.ipynb) - applies Ridge to address overfitting problems.
+* [Final_model.ipynb](/Project_2/Final_model.ipynb) - applies variable transformation to address heteroskedasticity and overfitting problems.
 
 # Description of Functions
 * `single_page_scrap` - scraps detailed information of a single property(encapsulated).  
