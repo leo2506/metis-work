@@ -2,7 +2,7 @@
 Second project from Metis Fall 2018 Bootcamp (Project Luther) commited by Leo Liu.
  
 # Streamline of Data Analysis
-* [Presentation](/Slides/Home rental prediction.pdf)
+* [Presentation](https://github.com/leo2506/metis-work/blob/master/Project_2/Slides/Home%20rental%20prediction.pdf)
 * [Summary](https://liuriguang.wixsite.com/leo2506-1/blog/project-luther-how-do-you-find-the-best-value-rental-home)
 * [Multipage_scrapping.ipynb](/multipage_scrapping.ipynb) - walks through the process of web scrapping. 
 * [Data_cleaning.ipynb](/Data_cleaning.ipynb) - cleans the scrapped data and engineers new features.
