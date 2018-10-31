@@ -1,0 +1,1524 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20182.18.1009.2120                               -->
+<workbook original-version='18.1' source-build='2018.2.3 (20182.18.1009.2120)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='loan' inline='true' name='federated.1f6yskc03boidc1bxul4p1dvt6ft' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='loan' name='textscan.18cgdvp0g7gc1217ynrav1xesax6'>
+            <connection class='textscan' directory='/Users/liuriguang/Desktop/Project 3/Data' filename='loan.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.18cgdvp0g7gc1217ynrav1xesax6' name='loan.csv' table='[loan#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='integer' name='member_id' ordinal='1' />
+            <column datatype='real' name='loan_amnt' ordinal='2' />
+            <column datatype='real' name='funded_amnt' ordinal='3' />
+            <column datatype='real' name='funded_amnt_inv' ordinal='4' />
+            <column datatype='string' name='term' ordinal='5' />
+            <column datatype='real' name='int_rate' ordinal='6' />
+            <column datatype='real' name='installment' ordinal='7' />
+            <column datatype='string' name='grade' ordinal='8' />
+            <column datatype='string' name='sub_grade' ordinal='9' />
+            <column datatype='string' name='emp_title' ordinal='10' />
+            <column datatype='string' name='emp_length' ordinal='11' />
+            <column datatype='string' name='home_ownership' ordinal='12' />
+            <column datatype='real' name='annual_inc' ordinal='13' />
+            <column datatype='string' name='verification_status' ordinal='14' />
+            <column datatype='string' name='issue_d' ordinal='15' />
+            <column datatype='string' name='loan_status' ordinal='16' />
+            <column datatype='string' name='pymnt_plan' ordinal='17' />
+            <column datatype='string' name='url' ordinal='18' />
+            <column datatype='string' name='desc' ordinal='19' />
+            <column datatype='string' name='purpose' ordinal='20' />
+            <column datatype='string' name='title' ordinal='21' />
+            <column datatype='string' name='zip_code' ordinal='22' />
+            <column datatype='string' name='addr_state' ordinal='23' />
+            <column datatype='real' name='dti' ordinal='24' />
+            <column datatype='real' name='delinq_2yrs' ordinal='25' />
+            <column datatype='string' name='earliest_cr_line' ordinal='26' />
+            <column datatype='real' name='inq_last_6mths' ordinal='27' />
+            <column datatype='real' name='mths_since_last_delinq' ordinal='28' />
+            <column datatype='real' name='mths_since_last_record' ordinal='29' />
+            <column datatype='real' name='open_acc' ordinal='30' />
+            <column datatype='real' name='pub_rec' ordinal='31' />
+            <column datatype='real' name='revol_bal' ordinal='32' />
+            <column datatype='real' name='revol_util' ordinal='33' />
+            <column datatype='real' name='total_acc' ordinal='34' />
+            <column datatype='boolean' name='initial_list_status' ordinal='35' />
+            <column datatype='real' name='out_prncp' ordinal='36' />
+            <column datatype='real' name='out_prncp_inv' ordinal='37' />
+            <column datatype='real' name='total_pymnt' ordinal='38' />
+            <column datatype='real' name='total_pymnt_inv' ordinal='39' />
+            <column datatype='real' name='total_rec_prncp' ordinal='40' />
+            <column datatype='real' name='total_rec_int' ordinal='41' />
+            <column datatype='real' name='total_rec_late_fee' ordinal='42' />
+            <column datatype='real' name='recoveries' ordinal='43' />
+            <column datatype='real' name='collection_recovery_fee' ordinal='44' />
+            <column datatype='string' name='last_pymnt_d' ordinal='45' />
+            <column datatype='real' name='last_pymnt_amnt' ordinal='46' />
+            <column datatype='string' name='next_pymnt_d' ordinal='47' />
+            <column datatype='string' name='last_credit_pull_d' ordinal='48' />
+            <column datatype='real' name='collections_12_mths_ex_med' ordinal='49' />
+            <column datatype='string' name='mths_since_last_major_derog' ordinal='50' />
+            <column datatype='real' name='policy_code' ordinal='51' />
+            <column datatype='string' name='application_type' ordinal='52' />
+            <column datatype='string' name='annual_inc_joint' ordinal='53' />
+            <column datatype='string' name='dti_joint' ordinal='54' />
+            <column datatype='string' name='verification_status_joint' ordinal='55' />
+            <column datatype='real' name='acc_now_delinq' ordinal='56' />
+            <column datatype='string' name='tot_coll_amt' ordinal='57' />
+            <column datatype='string' name='tot_cur_bal' ordinal='58' />
+            <column datatype='string' name='open_acc_6m' ordinal='59' />
+            <column datatype='string' name='open_il_6m' ordinal='60' />
+            <column datatype='string' name='open_il_12m' ordinal='61' />
+            <column datatype='string' name='open_il_24m' ordinal='62' />
+            <column datatype='string' name='mths_since_rcnt_il' ordinal='63' />
+            <column datatype='string' name='total_bal_il' ordinal='64' />
+            <column datatype='string' name='il_util' ordinal='65' />
+            <column datatype='string' name='open_rv_12m' ordinal='66' />
+            <column datatype='string' name='open_rv_24m' ordinal='67' />
+            <column datatype='string' name='max_bal_bc' ordinal='68' />
+            <column datatype='string' name='all_util' ordinal='69' />
+            <column datatype='string' name='total_rev_hi_lim' ordinal='70' />
+            <column datatype='string' name='inq_fi' ordinal='71' />
+            <column datatype='string' name='total_cu_tl' ordinal='72' />
+            <column datatype='string' name='inq_last_12m' ordinal='73' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>member_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[member_id]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>member_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loan_amnt</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[loan_amnt]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>loan_amnt</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>funded_amnt</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[funded_amnt]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>funded_amnt</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>funded_amnt_inv</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[funded_amnt_inv]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>funded_amnt_inv</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>term</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[term]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>term</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>int_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[int_rate]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>int_rate</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>installment</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[installment]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>installment</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>grade</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[grade]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>grade</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sub_grade</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sub_grade]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>sub_grade</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>emp_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[emp_title]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>emp_title</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>emp_length</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[emp_length]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>emp_length</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_ownership</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[home_ownership]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>home_ownership</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>annual_inc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[annual_inc]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>annual_inc</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>verification_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[verification_status]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>verification_status</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>issue_d</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[issue_d]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>issue_d</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loan_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[loan_status]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>loan_status</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pymnt_plan</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pymnt_plan]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>pymnt_plan</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[url]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>url</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>desc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[desc]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>desc</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>purpose</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[purpose]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>purpose</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>zip_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[zip_code]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>zip_code</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>addr_state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[addr_state]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>addr_state</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dti</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[dti]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>dti</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>delinq_2yrs</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[delinq_2yrs]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>delinq_2yrs</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>earliest_cr_line</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[earliest_cr_line]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>earliest_cr_line</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>inq_last_6mths</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[inq_last_6mths]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>inq_last_6mths</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mths_since_last_delinq</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mths_since_last_delinq]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>mths_since_last_delinq</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mths_since_last_record</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mths_since_last_record]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>mths_since_last_record</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>open_acc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[open_acc]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>open_acc</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pub_rec</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pub_rec]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>pub_rec</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revol_bal</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[revol_bal]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>revol_bal</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revol_util</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[revol_util]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>revol_util</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_acc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_acc]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>total_acc</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>initial_list_status</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[initial_list_status]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>initial_list_status</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>out_prncp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[out_prncp]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>out_prncp</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>out_prncp_inv</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[out_prncp_inv]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>out_prncp_inv</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_pymnt</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_pymnt]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>total_pymnt</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_pymnt_inv</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_pymnt_inv]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>total_pymnt_inv</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_rec_prncp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_rec_prncp]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>total_rec_prncp</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_rec_int</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_rec_int]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>total_rec_int</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_rec_late_fee</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_rec_late_fee]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>total_rec_late_fee</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recoveries</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[recoveries]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>recoveries</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>collection_recovery_fee</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[collection_recovery_fee]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>collection_recovery_fee</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_pymnt_d</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[last_pymnt_d]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>last_pymnt_d</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_pymnt_amnt</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[last_pymnt_amnt]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>last_pymnt_amnt</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>next_pymnt_d</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[next_pymnt_d]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>next_pymnt_d</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_credit_pull_d</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[last_credit_pull_d]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>last_credit_pull_d</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>collections_12_mths_ex_med</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[collections_12_mths_ex_med]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>collections_12_mths_ex_med</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mths_since_last_major_derog</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[mths_since_last_major_derog]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>mths_since_last_major_derog</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>policy_code</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[policy_code]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>policy_code</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>application_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[application_type]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>application_type</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>annual_inc_joint</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[annual_inc_joint]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>annual_inc_joint</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dti_joint</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dti_joint]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>dti_joint</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>verification_status_joint</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[verification_status_joint]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>verification_status_joint</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>acc_now_delinq</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[acc_now_delinq]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>acc_now_delinq</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tot_coll_amt</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tot_coll_amt]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>tot_coll_amt</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tot_cur_bal</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tot_cur_bal]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>tot_cur_bal</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>open_acc_6m</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[open_acc_6m]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>open_acc_6m</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>open_il_6m</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[open_il_6m]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>open_il_6m</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>open_il_12m</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[open_il_12m]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>open_il_12m</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>open_il_24m</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[open_il_24m]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>open_il_24m</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mths_since_rcnt_il</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[mths_since_rcnt_il]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>mths_since_rcnt_il</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_bal_il</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[total_bal_il]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>total_bal_il</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>il_util</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[il_util]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>il_util</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>open_rv_12m</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[open_rv_12m]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>open_rv_12m</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>open_rv_24m</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[open_rv_24m]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>open_rv_24m</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>max_bal_bc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[max_bal_bc]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>max_bal_bc</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>all_util</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[all_util]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>all_util</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_rev_hi_lim</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[total_rev_hi_lim]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>total_rev_hi_lim</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>inq_fi</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[inq_fi]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>inq_fi</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_cu_tl</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[total_cu_tl]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>total_cu_tl</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>inq_last_12m</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[inq_last_12m]</local-name>
+            <parent-name>[loan.csv]</parent-name>
+            <remote-alias>inq_last_12m</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='LOSS' datatype='real' name='[Calculation_3343289462826160128]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[total_rec_int] + [total_rec_late_fee] - [out_prncp]' />
+      </column>
+      <column caption='Debt' datatype='real' name='[Calculation_3343289462926163969]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[loan_amnt] - [total_pymnt]' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Acc Now Delinq' datatype='real' name='[acc_now_delinq]' role='measure' type='quantitative' />
+      <column caption='Addr State' datatype='string' name='[addr_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='All Util' datatype='string' name='[all_util]' role='dimension' type='nominal' />
+      <column caption='Annual Inc' datatype='real' name='[annual_inc]' role='measure' type='quantitative' />
+      <column caption='Annual Inc Joint' datatype='string' name='[annual_inc_joint]' role='dimension' type='nominal' />
+      <column caption='Application Type' datatype='string' name='[application_type]' role='dimension' type='nominal' />
+      <column caption='Collection Recovery Fee' datatype='real' name='[collection_recovery_fee]' role='measure' type='quantitative' />
+      <column caption='Collections 12 Mths Ex Med' datatype='real' name='[collections_12_mths_ex_med]' role='measure' type='quantitative' />
+      <column caption='Delinq 2Yrs' datatype='real' name='[delinq_2yrs]' role='measure' type='quantitative' />
+      <column caption='Desc' datatype='string' name='[desc]' role='dimension' type='nominal' />
+      <column caption='Dti' datatype='real' name='[dti]' role='measure' type='quantitative' />
+      <column caption='Dti Joint' datatype='string' name='[dti_joint]' role='dimension' type='nominal' />
+      <column caption='Earliest Cr Line' datatype='string' name='[earliest_cr_line]' role='dimension' type='nominal' />
+      <column caption='Emp Length' datatype='string' name='[emp_length]' role='dimension' type='nominal' />
+      <column caption='Emp Title' datatype='string' name='[emp_title]' role='dimension' type='nominal' />
+      <column caption='Funded Amnt' datatype='real' name='[funded_amnt]' role='measure' type='quantitative' />
+      <column caption='Funded Amnt Inv' datatype='real' name='[funded_amnt_inv]' role='measure' type='quantitative' />
+      <column caption='Grade' datatype='string' name='[grade]' role='dimension' type='nominal' />
+      <column caption='Home Ownership' datatype='string' name='[home_ownership]' role='dimension' type='nominal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Il Util' datatype='string' name='[il_util]' role='dimension' type='nominal' />
+      <column caption='Initial List Status' datatype='boolean' name='[initial_list_status]' role='dimension' type='nominal' />
+      <column caption='Inq Fi' datatype='string' name='[inq_fi]' role='dimension' type='nominal' />
+      <column caption='Inq Last 12M' datatype='string' name='[inq_last_12m]' role='dimension' type='nominal' />
+      <column caption='Inq Last 6Mths' datatype='real' name='[inq_last_6mths]' role='measure' type='quantitative' />
+      <column caption='Installment' datatype='real' name='[installment]' role='measure' type='quantitative' />
+      <column caption='Int Rate' datatype='real' name='[int_rate]' role='measure' type='quantitative' />
+      <column caption='Issue D' datatype='string' name='[issue_d]' role='dimension' type='nominal' />
+      <column caption='Last Credit Pull D' datatype='string' name='[last_credit_pull_d]' role='dimension' type='nominal' />
+      <column caption='Last Pymnt Amnt' datatype='real' name='[last_pymnt_amnt]' role='measure' type='quantitative' />
+      <column caption='Last Pymnt D' datatype='string' name='[last_pymnt_d]' role='dimension' type='nominal' />
+      <column caption='Loan Amnt' datatype='real' name='[loan_amnt]' role='measure' type='quantitative' />
+      <column caption='Loan Status' datatype='string' name='[loan_status]' role='dimension' type='nominal' />
+      <column caption='Max Bal Bc' datatype='string' name='[max_bal_bc]' role='dimension' type='nominal' />
+      <column caption='Member Id' datatype='integer' name='[member_id]' role='dimension' type='ordinal' />
+      <column caption='Mths Since Last Delinq' datatype='real' name='[mths_since_last_delinq]' role='measure' type='quantitative' />
+      <column caption='Mths Since Last Major Derog' datatype='string' name='[mths_since_last_major_derog]' role='dimension' type='nominal' />
+      <column caption='Mths Since Last Record' datatype='real' name='[mths_since_last_record]' role='measure' type='quantitative' />
+      <column caption='Mths Since Rcnt Il' datatype='string' name='[mths_since_rcnt_il]' role='dimension' type='nominal' />
+      <column caption='Next Pymnt D' datatype='string' name='[next_pymnt_d]' role='dimension' type='nominal' />
+      <column caption='Open Acc' datatype='real' name='[open_acc]' role='measure' type='quantitative' />
+      <column caption='Open Acc 6M' datatype='string' name='[open_acc_6m]' role='dimension' type='nominal' />
+      <column caption='Open Il 12M' datatype='string' name='[open_il_12m]' role='dimension' type='nominal' />
+      <column caption='Open Il 24M' datatype='string' name='[open_il_24m]' role='dimension' type='nominal' />
+      <column caption='Open Il 6M' datatype='string' name='[open_il_6m]' role='dimension' type='nominal' />
+      <column caption='Open Rv 12M' datatype='string' name='[open_rv_12m]' role='dimension' type='nominal' />
+      <column caption='Open Rv 24M' datatype='string' name='[open_rv_24m]' role='dimension' type='nominal' />
+      <column caption='Out Prncp' datatype='real' name='[out_prncp]' role='measure' type='quantitative' />
+      <column caption='Out Prncp Inv' datatype='real' name='[out_prncp_inv]' role='measure' type='quantitative' />
+      <column caption='Policy Code' datatype='real' name='[policy_code]' role='dimension' type='ordinal' />
+      <column caption='Pub Rec' datatype='real' name='[pub_rec]' role='measure' type='quantitative' />
+      <column caption='Purpose' datatype='string' name='[purpose]' role='dimension' type='nominal' />
+      <column caption='Pymnt Plan' datatype='string' name='[pymnt_plan]' role='dimension' type='nominal' />
+      <column caption='Recoveries' datatype='real' name='[recoveries]' role='measure' type='quantitative' />
+      <column caption='Revol Bal' datatype='real' name='[revol_bal]' role='measure' type='quantitative' />
+      <column caption='Revol Util' datatype='real' name='[revol_util]' role='measure' type='quantitative' />
+      <column caption='Sub Grade' datatype='string' name='[sub_grade]' role='dimension' type='nominal' />
+      <column caption='Term' datatype='string' name='[term]' role='dimension' type='nominal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Tot Coll Amt' datatype='string' name='[tot_coll_amt]' role='dimension' type='nominal' />
+      <column caption='Tot Cur Bal' datatype='string' name='[tot_cur_bal]' role='dimension' type='nominal' />
+      <column caption='Total Acc' datatype='real' name='[total_acc]' role='measure' type='quantitative' />
+      <column caption='Total Bal Il' datatype='string' name='[total_bal_il]' role='dimension' type='nominal' />
+      <column caption='Total Cu Tl' datatype='string' name='[total_cu_tl]' role='dimension' type='nominal' />
+      <column caption='Total Pymnt' datatype='real' name='[total_pymnt]' role='measure' type='quantitative' />
+      <column caption='Total Pymnt Inv' datatype='real' name='[total_pymnt_inv]' role='measure' type='quantitative' />
+      <column caption='Total Rec Int' datatype='real' name='[total_rec_int]' role='measure' type='quantitative' />
+      <column caption='Total Rec Late Fee' datatype='real' name='[total_rec_late_fee]' role='measure' type='quantitative' />
+      <column caption='Total Rec Prncp' datatype='real' name='[total_rec_prncp]' role='measure' type='quantitative' />
+      <column caption='Total Rev Hi Lim' datatype='string' name='[total_rev_hi_lim]' role='dimension' type='nominal' />
+      <column caption='Url' datatype='string' name='[url]' role='dimension' type='nominal' />
+      <column caption='Verification Status' datatype='string' name='[verification_status]' role='dimension' type='nominal' />
+      <column caption='Verification Status Joint' datatype='string' name='[verification_status_joint]' role='dimension' type='nominal' />
+      <column caption='Zip Code' datatype='string' name='[zip_code]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.55707' measure-ordering='alphabetic' measure-percentage='0.44293' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='loan' name='federated.1f6yskc03boidc1bxul4p1dvt6ft' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1f6yskc03boidc1bxul4p1dvt6ft'>
+            <column-instance column='[total_rec_int]' derivation='Avg' name='[avg:total_rec_int:qk]' pivot='key' type='quantitative' />
+            <column caption='Loan Status' datatype='string' name='[loan_status]' role='dimension' type='nominal' />
+            <column-instance column='[loan_status]' derivation='None' name='[none:loan_status:nk]' pivot='key' type='nominal' />
+            <column caption='Total Rec Int' datatype='real' name='[total_rec_int]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1f6yskc03boidc1bxul4p1dvt6ft].[none:loan_status:nk]'>
+            <groupfilter function='member' level='[none:loan_status:nk]' member='&quot;Fully Paid&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1f6yskc03boidc1bxul4p1dvt6ft].[none:loan_status:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1f6yskc03boidc1bxul4p1dvt6ft].[avg:total_rec_int:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='loan' name='federated.1f6yskc03boidc1bxul4p1dvt6ft' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1f6yskc03boidc1bxul4p1dvt6ft'>
+            <column caption='LOSS' datatype='real' name='[Calculation_3343289462826160128]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[total_rec_int] + [total_rec_late_fee] - [out_prncp]' />
+            </column>
+            <column-instance column='[Calculation_3343289462826160128]' derivation='Avg' name='[avg:Calculation_3343289462826160128:qk]' pivot='key' type='quantitative' />
+            <column caption='Loan Status' datatype='string' name='[loan_status]' role='dimension' type='nominal' />
+            <column-instance column='[loan_status]' derivation='None' name='[none:loan_status:nk]' pivot='key' type='nominal' />
+            <column caption='Out Prncp' datatype='real' name='[out_prncp]' role='measure' type='quantitative' />
+            <column caption='Total Rec Int' datatype='real' name='[total_rec_int]' role='measure' type='quantitative' />
+            <column caption='Total Rec Late Fee' datatype='real' name='[total_rec_late_fee]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1f6yskc03boidc1bxul4p1dvt6ft].[none:loan_status:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:loan_status:nk]' member='&quot;Default&quot;' />
+              <groupfilter function='member' level='[none:loan_status:nk]' member='&quot;In Grace Period&quot;' />
+              <groupfilter function='member' level='[none:loan_status:nk]' member='&quot;Late (16-30 days)&quot;' />
+              <groupfilter function='member' level='[none:loan_status:nk]' member='&quot;Late (31-120 days)&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1f6yskc03boidc1bxul4p1dvt6ft].[none:loan_status:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1f6yskc03boidc1bxul4p1dvt6ft].[avg:Calculation_3343289462826160128:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='loan' name='federated.1f6yskc03boidc1bxul4p1dvt6ft' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1f6yskc03boidc1bxul4p1dvt6ft'>
+            <column caption='Debt' datatype='real' name='[Calculation_3343289462926163969]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[loan_amnt] - [total_pymnt]' />
+            </column>
+            <column-instance column='[Calculation_3343289462926163969]' derivation='Avg' name='[avg:Calculation_3343289462926163969:qk]' pivot='key' type='quantitative' />
+            <column caption='Loan Amnt' datatype='real' name='[loan_amnt]' role='measure' type='quantitative' />
+            <column caption='Loan Status' datatype='string' name='[loan_status]' role='dimension' type='nominal' />
+            <column-instance column='[loan_status]' derivation='None' name='[none:loan_status:nk]' pivot='key' type='nominal' />
+            <column caption='Total Pymnt' datatype='real' name='[total_pymnt]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1f6yskc03boidc1bxul4p1dvt6ft].[none:loan_status:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:loan_status:nk]' member='&quot;Charged Off&quot;' />
+              <groupfilter function='member' level='[none:loan_status:nk]' member='&quot;Default&quot;' />
+              <groupfilter function='member' level='[none:loan_status:nk]' member='&quot;In Grace Period&quot;' />
+              <groupfilter function='member' level='[none:loan_status:nk]' member='&quot;Late (16-30 days)&quot;' />
+              <groupfilter function='member' level='[none:loan_status:nk]' member='&quot;Late (31-120 days)&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1f6yskc03boidc1bxul4p1dvt6ft].[none:loan_status:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1f6yskc03boidc1bxul4p1dvt6ft].[avg:Calculation_3343289462926163969:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card param='[federated.1f6yskc03boidc1bxul4p1dvt6ft].[none:loan_status:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1f6yskc03boidc1bxul4p1dvt6ft].[none:loan_status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card param='[federated.1f6yskc03boidc1bxul4p1dvt6ft].[none:loan_status:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1f6yskc03boidc1bxul4p1dvt6ft].[none:loan_status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1f6yskc03boidc1bxul4p1dvt6ft].[none:id:ok]</field>
+            <field>[federated.1f6yskc03boidc1bxul4p1dvt6ft].[none:loan_status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='48' name='Sheet 1' width='128'>
+      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
+    </thumbnail>
+    <thumbnail height='48' name='Sheet 2' width='128'>
+      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
+      IDn/A06CtqKj/DwRAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='48' name='Sheet 3' width='128'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
