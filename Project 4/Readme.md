@@ -15,3 +15,7 @@ Machine learning and Nature Language Processing techniques can be very useful in
 * [Sentiment_Analysis.ipynb](Sentiment_Analysis.ipynb) - analyzes sentiment over all topics and visualizes in heatmap.
 * [Similarity_Analysis.ipynb](Similarity_Analysis.ipynb) - analyzes pairwise cosine similarity between documents and plots time plot of similarity scores.
 
+# Tools
+- Data collection: NewsAPI, BeautifulSoup, Selenium.
+- Data cleaning and analysis: Pandas, Numpy, Sklearn, nltk, Textblob.
+- Visualization: Tableau, matplotlib, seaborn.
