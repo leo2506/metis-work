@@ -8,8 +8,8 @@ Machine learning and Nature Language Processing techniques can be very useful in
 # Notebook Description
 * [Presentation](https://github.com/leo2506/metis-work/blob/master/Project%204/Slides/Trade%20War%20Insights%20from%20News.pdf)
 * [Summary](https://liuriguang.wixsite.com/leo2506-1/blog/trade-war-insights-from-news)
-* [Data_collection.ipynb](/Project 4/Data_collection.ipynb) - collects metadata of 6,000 articles by news API.
-* [News_full_content_scarpping.ipynb](/Project 4/Data_cleaning.ipynb) - scraps full content of the 6,000 articles.
-* [Preprocessing_Tokenization_Vectorization.ipynb](/Project 4/Preprocessing_Tokenization_Vectorization.ipynb) - cleans up metadata and full content,
+* [Data_collection.ipynb](Data_collection.ipynb) - collects metadata of 6,000 articles by news API.
+* [News_full_content_scarpping.ipynb](Data_cleaning.ipynb) - scraps full content of the 6,000 articles.
+* [Preprocessing_Tokenization_Vectorization.ipynb](Preprocessing_Tokenization_Vectorization.ipynb) - cleans up metadata and full content,
 * [Final_model.ipynb](/Project_2/Final_model.ipynb) - applies variable transformation to address heteroskedasticity and overfitting problems.
 
