@@ -10,6 +10,8 @@ Machine learning and Nature Language Processing techniques can be very useful in
 * [Summary](https://liuriguang.wixsite.com/leo2506-1/blog/trade-war-insights-from-news)
 * [Data_collection.ipynb](Data_collection.ipynb) - collects metadata of 6,000 articles by news API.
 * [News_full_content_scarpping.ipynb](Data_cleaning.ipynb) - scraps full content of the 6,000 articles.
-* [Preprocessing_Tokenization_Vectorization.ipynb](Preprocessing_Tokenization_Vectorization.ipynb) - cleans up metadata and full content,
-* [Final_model.ipynb](/Project_2/Final_model.ipynb) - applies variable transformation to address heteroskedasticity and overfitting problems.
+* [Preprocessing_Tokenization_Vectorization.ipynb](Preprocessing_Tokenization_Vectorization.ipynb) - cleans up metadata and full content, removes digits, punctuations, stopwords, high frequency terms, lowercases all words, and then fits into countervectorizer and tfidfvectorizer.
+* [LDA_Topic_Modeling.ipynb](LDA_Topic_Modeling.ipynb) - builds a LDA topic model.
+* [Sentiment_Analysis.ipynb](Sentiment_Analysis.ipynb) - analyzes sentiment over all topics and visualizes in heatmap.
+* [Similarity_Analysis.ipynb](Similarity_Analysis.ipynb) - analyzes pairwise cosine similarity between documents and plots time plot of similarity scores.
 
