@@ -1,5 +1,5 @@
 # Good or Bad Loans?
-
+![](https://github.com/leo2506/metis-work/blob/master/Project%203/personal_loan.jpg)
 ## Overview
 The project is intended to build a classification model to detect risky clients and enhance policies against losses for Lending Club, a peer-to-peer loan company. The dataset is acquired from [Kaggle.com](https://www.kaggle.com/wendykan/lending-club-loan-data), which records loan data from 2007 to 2015. The dataset has 890,000 observations and 75 features in total. The model predicts whether an applicant is going to keep paying on time. 
 ## Project Design
