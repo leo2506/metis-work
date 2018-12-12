@@ -1,5 +1,5 @@
 # News Insight from Trade War
-
+* [](https://github.com/leo2506/metis-work/blob/master/Project%204/caption.png)
 # Overview
 US and China trade war has caught eyes of general public since the beginning of 2018. As it heats up with tariffs increasingly imposed against each other, a variety of industries have been influenced immensely. Meanwhile, some countries have switched their attitudes towards US and China.  Once people wish to make an investment decision based on ongoing status of trade war, they will first look at recent news based on the opinions from domain experts. It is easy to gain provoking insights upon reading through articles. However, figuring out trends, patterns, and correlations of different aspects of the trade war are complicated and time-consuming. 
 
