@@ -1,5 +1,8 @@
-# Project
-Second project from Metis Fall 2018 Bootcamp (Project Luther) commited by Leo Liu.
+# How do you find your best value rental home?
+![](https://github.com/leo2506/metis-work/blob/master/Project%202/moda-apartments-exterior.jpg)
+
+# Objective
+The objective of this project is to help customer who wants to rent a home find the best value property and budget their rental expenses. 
  
 # Streamline of Data Analysis
 * [Presentation](/Project_2/Slides/Home%20rental%20prediction.pdf)
